@@ -33,5 +33,6 @@ parameters:
   sentry.dsn: "https://XXXXXXXX:XXXXXXXX@app.getsentry.com/XXXX"
   session_prefix: myproject
   websitetitle: MyProject
-  aws_access_key: ~
-  aws_access_secret: ~
+  aws_access_key: "provide aws access key"
+  aws_access_secret: "provide aws access key"
+  aws_s3_bucket: myproject

@@ -3,7 +3,7 @@ remote_media:
     media_url: ~
 
     s3:
-      bucket: ~
+      bucket: "%aws_s3_bucket%"
 
       # this is optional and defaults to eu-west-1
       #
