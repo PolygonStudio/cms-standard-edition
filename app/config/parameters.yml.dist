@@ -7,7 +7,7 @@ parameters:
   database_name: polygoncms
   database_password: ~
   database_port: ~
-  database_user: travis
+  database_user: root
   debug_redirects: false
   debug_toolbar: true
   defaultlocale: en

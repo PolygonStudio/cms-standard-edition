@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-mysql -e 'create database IF NOT EXISTS kunstmaanbundles;'
+mysql -e 'create database IF NOT EXISTS polygoncms;'
 cp app/config/parameters.yml.dist app/config/parameters.yml
-sed -i 's/dbuser/travis/g' app/config/parameters.yml
+sed -i 's/database_user: root/database_user: travis/g' app/config/parameters.yml
 
 if [ "TRAVIS_EVENT_TYPE" != "cron" ]; then
     composer install --no-scripts --optimize-autoloader;
