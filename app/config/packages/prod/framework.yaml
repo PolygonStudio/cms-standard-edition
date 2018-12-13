@@ -1,0 +1,8 @@
+framework:
+  validation:
+    cache: validator.mapping.cache.doctrine.apc
+  test: ~
+  session:
+    storage_id: session.storage.mock_file
+  profiler:
+    collect: false

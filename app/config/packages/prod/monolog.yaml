@@ -1,0 +1,20 @@
+monolog:
+  handlers:
+    main:
+      type:         fingers_crossed
+      action_level: error
+      handler:      nested
+      channels:     "!event"
+      excluded_404s:
+        - ^/
+    sentry:
+      type:  raven
+      dsn:   "%sentry.dsn%"
+      level: critical
+    nested:
+      type:  stream
+      path:  "%kernel.logs_dir%/%kernel.environment%.log"
+      level: debug
+      formatter: kunstmaan_logging_formatter
+    console:
+      type:  console

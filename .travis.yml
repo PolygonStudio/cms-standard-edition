@@ -1,0 +1,48 @@
+language: php
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - node_modules
+    - vendor
+    - $BUILD_CACHE_DIR
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+
+matrix:
+  fast_finish: true
+
+services:
+  - elasticsearch
+  - mysql
+
+env:
+  global:
+    - DB="mysql"
+    - BUILD_CACHE_DIR=$HOME/.build-cache
+    - TRAVIS_BUILD_DIR=.travis/build
+
+before_install:
+  - .travis/before_install.sh
+
+install:
+  - .travis/install.sh
+
+before_script:
+  - .travis/before_script.sh
+
+script:
+  - .travis/script.sh
+
+after_failure:
+  - .travis/after_failure.sh
+
+notifications:
+  email:
+    - travis@kunstmaan.be

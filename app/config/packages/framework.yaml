@@ -1,0 +1,27 @@
+framework:
+  secret:          "%secret%"
+  router:
+    resource: "%kernel.root_dir%/config/routing.yml"
+    strict_requirements: ~
+  form:            ~
+  csrf_protection: ~
+  validation:
+    enable_annotations: true
+    strict_email: true
+  templating:
+    engines: ['twig']
+  default_locale:  "%locale%"
+  trusted_hosts:   ~
+  http_method_override: true
+  ide:                "phpstorm://open?file=%%f&line=%%l"
+  esi:                { enabled: true }
+  fragments:          { path: /_fragment }
+  translator:         { fallback: "%locale%" }
+  session:
+    handler_id:  ~
+    name:               "%session_prefix%"
+    # set true if no scripting languages need to access the cookie
+    cookie_httponly:    false
+  assets:
+    version:     v1
+

@@ -1,0 +1,3 @@
+kunstmaan_admin:
+  admin_password: -adminpwd-
+  dashboard_route: 'kunstmaan_dashboard'

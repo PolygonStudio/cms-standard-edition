@@ -1,0 +1,15 @@
+remote_media:
+  cdn:
+    media_url: ~
+
+    s3:
+      bucket: ~
+
+      # this is optional and defaults to eu-west-1
+      #
+      # region: eu-west-1
+
+      # please provide AWS access key and secret for this bucket:
+      #
+      access_key: "%aws_access_key%"
+      access_secret: "%aws_access_secret%"

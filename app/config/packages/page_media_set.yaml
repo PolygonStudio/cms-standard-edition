@@ -1,0 +1,8 @@
+page_media_set:
+  formats:
+    banner:
+      min_width: 1920
+      min_height: 420
+      max_width: 1920
+      max_height: 460
+    teaser: ~

@@ -1,0 +1,3 @@
+kunstmaan_translator:
+  enabled: true
+  managed_locales: ['nl', 'en', 'de', 'fr']

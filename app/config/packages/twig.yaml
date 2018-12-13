@@ -1,0 +1,13 @@
+twig:
+  debug:            "%kernel.debug%"
+  strict_variables: "%kernel.debug%"
+
+  globals:
+    websitetitle: "%websitetitle%"
+    defaultlocale: "%defaultlocale%"
+    requiredlocales: "%requiredlocales%"
+    gtm_code: "%analytics.googletagmanager%"
+    #titlecolor: "#000000"
+    #titlebgcolor: "#2997CE"
+    #admin_logo: ~
+

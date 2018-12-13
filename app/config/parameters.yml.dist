@@ -1,0 +1,37 @@
+parameters: 
+  analytics.googletagmanager: GTM-XXXXXX
+  aviary_api_key: "Register on https://creativesdk.adobe.com/myapps.html"
+  cdnpath: ~
+  database_driver: pdo_mysql
+  database_host: "127.0.0.1"
+  database_name: polygoncms
+  database_password: ~
+  database_port: ~
+  database_user: root
+  debug_redirects: false
+  debug_toolbar: true
+  defaultlocale: en
+  doctrine.server_version: 5.6
+  google.api.client_id: "More info at http://bundles.kunstmaan.be/documentation/cookbook/google-analytics-dashboard"
+  google.api.client_secret: ~
+  google.api.dev_key: ~
+  liip_imagine_filesystem_data_root: 
+    - "%kernel.root_dir%/../web"
+  locale: en
+  mailer_from_address: "info@myproject.dev"
+  mailer_from_name: "Polygon CMS"
+  mailer_host: "127.0.0.1"
+  mailer_password: ~
+  mailer_transport: smtp
+  mailer_user: ~
+  multilanguage: true
+  requiredlocales: pl|en
+  searchindexname: myproject
+  searchindexprefix: myproject
+  searchport: 9200
+  secret: ThisTokenIsNotSoSecretChangeIt
+  sentry.dsn: "https://XXXXXXXX:XXXXXXXX@app.getsentry.com/XXXX"
+  session_prefix: myproject
+  websitetitle: MyProject
+  aws_access_key: ~
+  aws_access_secret: ~
