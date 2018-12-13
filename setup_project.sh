@@ -8,7 +8,7 @@ bin/console doctrine:migrations:migrate
 bin/console doctrine:fixtures:load
 
 ## Optionaly: create admin behat tests
-bin/console kuma:generate:admin-tests
+#bin/console kuma:generate:admin-tests
 
 ## Optionaly: build all assets (FE & CMS)
 ./buildUI.sh
