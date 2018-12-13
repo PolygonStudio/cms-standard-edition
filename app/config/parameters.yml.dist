@@ -7,7 +7,7 @@ parameters:
   database_name: polygoncms
   database_password: ~
   database_port: ~
-  database_user: root
+  database_user: travis
   debug_redirects: false
   debug_toolbar: true
   defaultlocale: en
@@ -34,5 +34,5 @@ parameters:
   session_prefix: myproject
   websitetitle: MyProject
   aws_access_key: "provide aws access key"
-  aws_access_secret: "provide aws access key"
+  aws_access_secret: "provide aws secret"
   aws_s3_bucket: myproject
