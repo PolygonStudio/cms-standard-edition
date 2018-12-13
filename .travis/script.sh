@@ -11,7 +11,8 @@ npm run build
 
 # Setup application
 bin/console doctrine:schema:drop --env=dev --force --no-interaction || exit $?
-bin/console doctrine:schema:create --env=dev --no-interaction || exit $?
+bin/console doctrine:migrations:diff --env=dev --no-interaction || exit $?
+bin/console doctrine:migrations:migrate --env=dev --no-interaction || exit $?
 bin/console doctrine:fixtures:load --env=dev --no-interaction || exit $?
 bin/console kuma:generate:admin-tests --namespace="MyProject\\WebsiteBundle" || exit $?
 bin/console assets:install --env=test --no-interaction || exit $?
